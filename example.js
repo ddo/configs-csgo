@@ -2,8 +2,11 @@ var CSGO = require('./');
 
 var csgo = CSGO();
 
-// csgo.test();
-// csgo.checkDir();
+csgo.init();
+
+// csgo.checkDir(function(exist) {
+//     console.log(exist);
+// });
 
 // csgo.autobuy.open();
 
@@ -54,10 +57,10 @@ var csgo = CSGO();
 
 // csgo.config.open();
 
-csgo.config.get(function(err, configs) {
-    console.log(err);
-    console.log(configs);
-});
+// csgo.config.get(function(err, configs) {
+//     console.log(err);
+//     console.log(configs);
+// });
 
 // var config = [];
 
